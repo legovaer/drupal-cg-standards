@@ -1,0 +1,133 @@
+pmd:
+  high:
+    metric: "pmdhigh"
+    title: "PMD High Prioritized Issues"
+    description: "The amount of high prioritized PMD warnings compared with the total amount of lines of code."
+    reverse: 0
+    grades:
+      a+: 0
+      a: 0.0005
+      b: 0.002
+      c: 0.003
+      d: 0.005
+      e: 0.007
+  normal:
+    metric: "pmdnormal"
+    title: "PMD Normal Prioritized Issues"
+    description: "The amount of normal prioritized PMD Warnings compared with the total amount of lines of code."
+    reverse: 0
+    grades:
+      a+: 0
+      a: 0.002
+      b: 0.005
+      c: 0.007
+      d: 0.01
+      e: 0.12
+
+checkstyle:
+  high:
+    metric: "cshigh"
+    title: "CheckStyle High Prioritized Issues"
+    description: "High prioritized checkstyle warnings compared with the total amount of lines of code."
+    reverse: 0
+    grades:
+      a+: 0
+      a: 0.03
+      b: 0.06
+      c: 0.09
+      d: 0.12
+      e: 0.15
+  normal:
+    metric: "csnormal"
+    title: "CheckStyle Normal Prioritized Issues"
+    description: "Normal prioritized checkstyle warnings compared with the total amount of lines of code."
+    reverse: 0
+    grades:
+      a+: 0
+      a: 0.06
+      b: 0.12
+      c: 0.18
+      d: 0.24
+      e: 0.3
+
+testing:
+  functions:
+    metric: "testfunc"
+    title: "Testing Functions"
+    description: "Amount of test methods that are available compared with the total amount of lines of code."
+    reverse: 1
+    grades:
+      a+: 0.1
+      a: 0.08
+      b: 0.05
+      c: 0.03
+      d: 0.01
+      e: 0
+  coverage:
+    metric: "testcover"
+    title: "Coverage of Unit Tests"
+    description: "The overall code coverage of the existing unit tests."
+    reverse: 1
+    grades:
+      a+: 100
+      a: 80
+      b: 70
+      c: 60
+      d: 60
+      e: 40
+
+cyclocomplex:
+  functions:
+    metric: "cyclocomplexfunc"
+    title: "Cyclomatic Complexity per Function"
+    description: "The average cyclomatic complexity per function"
+    reverse: 0
+    grades:
+      a+: 0
+      a: 0.2
+      b: 0.4
+      c: 0.6
+      d: 0.8
+      e: 1
+  files:
+    metric: "cyclocomplexfile"
+    title: "Cyclomatic Complexity per File"
+    description: "The average cyclomatic complexity per file"
+    reverse: 0
+    grades:
+      a+: 0
+      a: 0.2
+      b: 0.4
+      c: 0.6
+      d: 0.8
+      e: 1
+
+dupcode:
+  blocks:
+    metric: "dupcodeblock"
+    title: "Amount of Duplicated blocks of code"
+    description: "Amount of blocks of duplicated code inside the codebase."
+    reverse: 0
+    grades:
+      a+: 0
+      a: 1
+      b: 2
+      c: 4
+      d: 6
+      e: 8
+
+cloc:
+  cloc:
+    metric: "cloc"
+    title: "Comment Lines of Code"
+    description: "The total amount of comments lines of code (CLOC) compared with the total amount of lines of code."
+    reverse: 1
+    grades:
+      a+: 0.4
+      a: 0.3
+      b: 0.2
+      c: 0.1
+      d: 0.09
+      e: 0.08
+
+
